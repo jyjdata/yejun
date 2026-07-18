@@ -1,22 +1,289 @@
 <!DOCTYPE html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>장예준 연구포트폴리오</title>
+
 <style>
-body{font-family:Arial,sans-serif;background:#f4f7fb;margin:0}
-header{background:linear-gradient(90deg,#2563eb,#0ea5e9);color:#fff;padding:40px;text-align:center}
-.container{max-width:1000px;margin:auto;padding:24px}
-.card{background:#fff;border-radius:14px;padding:22px;margin:20px 0;box-shadow:0 4px 14px rgba(0,0,0,.1)}
-h2{margin:0;color:#2563eb}
-.badge{display:inline-block;background:#e0f2fe;color:#0369a1;padding:4px 10px;border-radius:20px;margin:6px 6px 6px 0}
-a.btn{display:inline-block;background:#2563eb;color:#fff;text-decoration:none;padding:10px 16px;border-radius:8px;margin-top:10px}
-</style></head><body>
-<header><h1>장예준 연구포트폴리오</h1><p>데이터 분석 · 프로그래밍 · 연구 프로젝트</p></header>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f7fb;
+    margin:0;
+}
+
+header{
+    background:linear-gradient(90deg,#2563eb,#0ea5e9);
+    color:white;
+    padding:40px;
+    text-align:center;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:24px;
+}
+
+.card{
+    position:relative;
+    background:white;
+    border-radius:28px;
+    padding:40px;
+    margin:28px 0;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    border:2px solid #3b82f6;
+}
+
+.latest{
+    position:absolute;
+    top:0;
+    right:0;
+    background:#3b82f6;
+    color:white;
+    padding:22px 38px;
+    border-radius:0 28px 0 28px;
+    font-size:1.6rem;
+    font-weight:bold;
+}
+
+.date{
+    display:inline-block;
+    padding:14px 26px;
+    background:#eef2f7;
+    color:#3b82f6;
+    border-radius:18px;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+.card h2{
+    font-size:3rem;
+    margin-top:40px;
+    margin-bottom:30px;
+    color:#1e293b;
+}
+
+.card p{
+    color:#64748b;
+    font-size:1.9rem;
+    line-height:1.8;
+}
+
+.tags{
+    margin-top:40px;
+}
+
+.badge{
+    display:inline-block;
+    background:#eef2f7;
+    color:#475569;
+    padding:14px 26px;
+    border-radius:18px;
+    margin-right:12px;
+    margin-bottom:12px;
+    font-size:1.4rem;
+    font-weight:600;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:45px;
+    background:#16233d;
+    color:white;
+    text-decoration:none;
+    padding:28px 42px;
+    border-radius:24px;
+    font-size:2rem;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.btn:hover{
+    background:#2563eb;
+}
+
+h3{
+    color:#2563eb;
+    margin-bottom:5px;
+}
+
+.old-card{
+    background:white;
+    border-radius:14px;
+    padding:24px;
+    margin:20px 0;
+    box-shadow:0 4px 14px rgba(0,0,0,.1);
+}
+
+.old-card h2{
+    font-size:1.8rem;
+    margin:0;
+    color:#2563eb;
+}
+
+.old-card p{
+    font-size:1rem;
+    color:#333;
+}
+
+.old-btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+.small-badge{
+    display:inline-block;
+    background:#e0f2fe;
+    color:#0369a1;
+    padding:4px 10px;
+    border-radius:20px;
+    margin:6px 6px 6px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>장예준 연구포트폴리오</h1>
+    <p>데이터 분석 · 프로그래밍 · 연구 프로젝트</p>
+</header>
+
+
 <div class="container">
-<div class="card"><h2>A시 일반계고 공학계열 진로 교육과정 특성 분석</h2><p><b>연도</b> 2026</p><span class="badge">Python</span><span class="badge">Pandas</span><span class="badge">Streamlit</span><p>교육공공데이터와 고교 교육과정을 비교 분석하여 공학계열 진학에 필요한 선택과목을 분석하고 진로별 추천 시스템 프로토타입을 구현.</p><a class="btn" target="_blank" href="A시일반계고공학계열진로교육과정특성분석_dslab202606.pdf">PDF 파일 보기</a></div>
 
-<div class="card"><h2>세계 경제위기 지표 분석</h2><p><b>연도</b> 2025.10</p><span class="badge">Python</span><span class="badge">Pandas</span><span class="badge">Matplotlib</span><p>IMF·World Bank 데이터를 활용하여 GDP, 환율, 물가, 실업률, 외환보유액의 상관관계를 국가별로 분석하고 시각화.</p><a class="btn" target="_blank" href="세계경제위기지표분석_데이터분석연구회_소논문20251025.pdf">PDF 파일 보기</a></div>
+    <!-- 최신 프로젝트 -->
+    <div class="card">
 
-<div class="card"><h2>생활습관이 건강에 미치는 영향</h2><p><b>연도</b> 2025.05</p><span class="badge">Python</span><span class="badge">CSV</span><p>92명의 설문 데이터를 분석하여 BMI, 운동, 수면, 야식 등의 상관관계를 검증하고 가설을 분석.</p><a class="btn" target="_blank" href="dslab_설문결과보고서20250426.pdf">PDF 파일 보기</a></div>
+        <div class="latest">LATEST</div>
 
-<div class="card"><h2>SSTP (Solar System TelePort)</h2><p><b>연도</b> 2023</p><span class="badge">C</span><span class="badge">Console</span><p>태양계 행성을 선택하여 이동하는 콘솔 프로그램. 함수, 반복문, 조건문을 활용하여 행성 이동 시뮬레이션을 구현.</p><a class="btn" target="_blank" href="태양계텔레포트.pdf">PDF 파일 보기</a></div>
-</div></body></html>
+        <div class="date">
+            2026.07.17
+        </div>
+
+        <h2>과목추천시스템</h2>
+
+        <p>
+            고등학교 선택과목제에 따라 공학계열 학과에 진학하려고 할 때
+            본인이 다니는 학교에 개설되어 있는 과목을 확인할 수 있는
+            웹 앱(2026년 편제표 기준, 안양 일반계고)
+        </p>
+
+        <div class="tags">
+            <span class="badge">#Web_App</span>
+            <span class="badge">#Education_Data</span>
+            <span class="badge">#Recommendation</span>
+        </div>
+
+        <a class="btn"
+           href="https://greenwave35.github.io/eumapp/"
+           target="_blank">
+            ↗ 웹 앱 바로가기
+        </a>
+
+    </div>
+
+
+
+    <!-- 기존 프로젝트 -->
+
+    <div class="old-card">
+        <h2>A시 일반계고 공학계열 진로 교육과정 특성 분석</h2>
+        <p><b>연도</b> 2026</p>
+
+        <span class="small-badge">Python</span>
+        <span class="small-badge">Pandas</span>
+        <span class="small-badge">Streamlit</span>
+
+        <p>
+            교육공공데이터와 고교 교육과정을 비교 분석하여
+            공학계열 진학에 필요한 선택과목을 분석하고
+            진로별 추천 시스템 프로토타입을 구현.
+        </p>
+
+        <a class="old-btn"
+           target="_blank"
+           href="A시일반계고공학계열진로교육과정특성분석_dslab202606.pdf">
+            PDF 파일 보기
+        </a>
+    </div>
+
+
+
+    <div class="old-card">
+        <h2>세계 경제위기 지표 분석</h2>
+        <p><b>연도</b> 2025.10</p>
+
+        <span class="small-badge">Python</span>
+        <span class="small-badge">Pandas</span>
+        <span class="small-badge">Matplotlib</span>
+
+        <p>
+            IMF·World Bank 데이터를 활용하여 GDP, 환율, 물가,
+            실업률, 외환보유액의 상관관계를 국가별로 분석하고 시각화.
+        </p>
+
+        <a class="old-btn"
+           target="_blank"
+           href="세계경제위기지표분석_데이터분석연구회_소논문20251025.pdf">
+            PDF 파일 보기
+        </a>
+    </div>
+
+
+
+    <div class="old-card">
+        <h2>생활습관이 건강에 미치는 영향</h2>
+        <p><b>연도</b> 2025.05</p>
+
+        <span class="small-badge">Python</span>
+        <span class="small-badge">CSV</span>
+
+        <p>
+            92명의 설문 데이터를 분석하여 BMI, 운동,
+            수면, 야식 등의 상관관계를 검증하고 가설을 분석.
+        </p>
+
+        <a class="old-btn"
+           target="_blank"
+           href="dslab_설문결과보고서20250426.pdf">
+            PDF 파일 보기
+        </a>
+    </div>
+
+
+
+    <div class="old-card">
+        <h2>SSTP (Solar System TelePort)</h2>
+        <p><b>연도</b> 2023</p>
+
+        <span class="small-badge">C</span>
+        <span class="small-badge">Console</span>
+
+        <p>
+            태양계 행성을 선택하여 이동하는 콘솔 프로그램.
+            함수, 반복문, 조건문을 활용하여 행성 이동 시뮬레이션을 구현.
+        </p>
+
+        <a class="old-btn"
+           target="_blank"
+           href="태양계텔레포트.pdf">
+            PDF 파일 보기
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
