@@ -1,27 +1,213 @@
-<div class="card latest-card">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>장예준 연구포트폴리오</title>
 
-    <div class="latest">LATEST</div>
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f7fb;
+    margin:0;
+}
 
-    <div class="date">2026.07.17</div>
+header{
+    background:linear-gradient(90deg,#2563eb,#0ea5e9);
+    color:#fff;
+    padding:40px;
+    text-align:center;
+}
 
-    <h2>과목추천시스템</h2>
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:24px;
+}
 
-    <p>
-        고등학교 선택과목제에 따라 공학계열 학과에 진학하려고 할 때
-        본인이 다니는 학교에 개설되어있는 과목을 확인할 수 있는
-        웹 앱(2026년 편제표 기준, 안양 일반계고)
-    </p>
+.card{
+    background:#fff;
+    border-radius:14px;
+    padding:22px;
+    margin:20px 0;
+    box-shadow:0 4px 14px rgba(0,0,0,.1);
+}
 
-    <span class="badge">#Web_App</span>
-    <span class="badge">#Education_Data</span>
-    <span class="badge">#Recommendation</span>
+h2{
+    margin:0;
+    color:#2563eb;
+}
 
-    <br>
+.badge{
+    display:inline-block;
+    background:#e0f2fe;
+    color:#0369a1;
+    padding:4px 10px;
+    border-radius:20px;
+    margin:6px 6px 6px 0;
+}
 
-    <a class="btn"
-       target="_blank"
-       href="https://greenwave35.github.io/eumapp/">
-        웹 앱 바로가기
-    </a>
+a.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+/* 최신 프로젝트 카드 */
+
+.latest-card{
+    position:relative;
+}
+
+.latest{
+    position:absolute;
+    top:0;
+    right:0;
+    background:#2563eb;
+    color:white;
+    padding:15px 28px;
+    border-radius:0 14px 0 14px;
+    font-weight:bold;
+}
+
+.date{
+    display:inline-block;
+    background:#e0f2fe;
+    color:#2563eb;
+    padding:6px 15px;
+    border-radius:15px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>장예준 연구포트폴리오</h1>
+    <p>데이터 분석 · 프로그래밍 · 연구 프로젝트</p>
+</header>
+
+<div class="container">
+
+    <!-- 최신 프로젝트 -->
+    <div class="card latest-card">
+
+        <div class="latest">LATEST</div>
+
+        <div class="date">2026.07.17</div>
+
+        <h2>과목추천시스템</h2>
+
+        <p>
+            고등학교 선택과목제에 따라 공학계열 학과에 진학하려고 할 때
+            본인이 다니는 학교에 개설되어있는 과목을 확인할 수 있는
+            웹 앱(2026년 편제표 기준, 안양 일반계고)
+        </p>
+
+        <span class="badge">#Web_App</span>
+        <span class="badge">#Education_Data</span>
+        <span class="badge">#Recommendation</span>
+
+        <br>
+
+        <a class="btn"
+           target="_blank"
+           href="https://greenwave35.github.io/eumapp/">
+            웹 앱 바로가기
+        </a>
+
+    </div>
+
+
+    <div class="card">
+        <h2>A시 일반계고 공학계열 진로 교육과정 특성 분석</h2>
+        <p><b>연도</b> 2026</p>
+
+        <span class="badge">Python</span>
+        <span class="badge">Pandas</span>
+        <span class="badge">Streamlit</span>
+
+        <p>
+            교육공공데이터와 고교 교육과정을 비교 분석하여
+            공학계열 진학에 필요한 선택과목을 분석하고
+            진로별 추천 시스템 프로토타입을 구현.
+        </p>
+
+        <a class="btn"
+           target="_blank"
+           href="A시일반계고공학계열진로교육과정특성분석_dslab202606.pdf">
+            PDF 파일 보기
+        </a>
+    </div>
+
+
+    <div class="card">
+        <h2>세계 경제위기 지표 분석</h2>
+        <p><b>연도</b> 2025.10</p>
+
+        <span class="badge">Python</span>
+        <span class="badge">Pandas</span>
+        <span class="badge">Matplotlib</span>
+
+        <p>
+            IMF·World Bank 데이터를 활용하여 GDP, 환율, 물가,
+            실업률, 외환보유액의 상관관계를 국가별로 분석하고 시각화.
+        </p>
+
+        <a class="btn"
+           target="_blank"
+           href="세계경제위기지표분석_데이터분석연구회_소논문20251025.pdf">
+            PDF 파일 보기
+        </a>
+    </div>
+
+
+    <div class="card">
+        <h2>생활습관이 건강에 미치는 영향</h2>
+        <p><b>연도</b> 2025.05</p>
+
+        <span class="badge">Python</span>
+        <span class="badge">CSV</span>
+
+        <p>
+            92명의 설문 데이터를 분석하여 BMI, 운동, 수면,
+            야식 등의 상관관계를 검증하고 가설을 분석.
+        </p>
+
+        <a class="btn"
+           target="_blank"
+           href="dslab_설문결과보고서20250426.pdf">
+            PDF 파일 보기
+        </a>
+    </div>
+
+
+    <div class="card">
+        <h2>SSTP (Solar System TelePort)</h2>
+        <p><b>연도</b> 2023</p>
+
+        <span class="badge">C</span>
+        <span class="badge">Console</span>
+
+        <p>
+            태양계 행성을 선택하여 이동하는 콘솔 프로그램.
+            함수, 반복문, 조건문을 활용하여 행성 이동 시뮬레이션을 구현.
+        </p>
+
+        <a class="btn"
+           target="_blank"
+           href="태양계텔레포트.pdf">
+            PDF 파일 보기
+        </a>
+    </div>
 
 </div>
+
+</body>
+</html>
